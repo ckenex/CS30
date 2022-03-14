@@ -17,7 +17,7 @@ public class Faculty extends UEmployee
 	
 	public String toString()
 	{
-		return(super.getName() + " has salary: " + super.getSalary() + " and works in the " + department + " department.");
+		return(super.getName() + " has salary: $" + super.getSalary() + " and works in the " + department + " department.");
 	}
 	
 }

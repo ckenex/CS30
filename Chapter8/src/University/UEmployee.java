@@ -23,6 +23,6 @@ public class UEmployee
 	
 	public String toString()
 	{
-		return(name + " has salary: " + salary);
+		return(name + " has salary: $" + salary);
 	}
 }
