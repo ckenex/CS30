@@ -1,6 +1,20 @@
+/*
+
+Program: TestUniversity.java          Last Date of this Revision: March 15, 2022
+
+
+
+Author: Caden, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
+
 package University;
 
-public class testUniversity {
+public class TestUniversity {
 
 	public static void main(String[] args)
 	{

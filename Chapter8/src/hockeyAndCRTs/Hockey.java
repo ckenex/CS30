@@ -1,3 +1,18 @@
+/*
+
+Program: Hockey.java          Last Date of this Revision: March 15, 2022
+
+
+
+Author: Caden, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
+
+package hockeyAndCRTs;
 
 public class Hockey {
 
@@ -7,11 +22,11 @@ public class Hockey {
 		Puck grey = new Puck(1.5, 0.8, 4.4);
 		
 		System.out.println("The puck has radius: " + grey.getRadius());
-		System.out.println("The puck has volume: " + grey.volume());
+		System.out.println("The puck has volume: " + grey.volume());//initial test of get methods
 		System.out.println("Meant for division: " + grey.getDivision());
 		System.out.println("The puck has weight: " + grey.getWeight());
 
-		Puck first = new Puck(1.5, 1.0, 4.9);
+		Puck first = new Puck(1.5, 1.0, 4.9);//creation of pucks to be compared to one another
 		Puck second = new Puck(1.3, 0.7, 4.5);
 		Puck third = new Puck(1.5, 1.0, 4.9);
 		

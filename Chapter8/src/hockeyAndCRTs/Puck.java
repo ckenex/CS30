@@ -1,3 +1,4 @@
+package hockeyAndCRTs;
 import java.lang.Comparable;
 public class Puck extends Disk {
 

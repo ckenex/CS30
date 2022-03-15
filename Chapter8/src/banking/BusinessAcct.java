@@ -8,7 +8,7 @@ public class BusinessAcct extends Account
 	public BusinessAcct(String f, String l, double b) 
 	{
 		
-		super(f, l);
+		super(f, l); //calling from account methods
 		balance = b;
 	}
 	
@@ -21,7 +21,7 @@ public class BusinessAcct extends Account
 	{
 		if(balance >= x)
 		{
-			if(x >= 500)
+			if(x >= 500) //logic for extra charge on banking accounts
 			{
 				balance = balance - x;
 			}

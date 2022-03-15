@@ -3,7 +3,7 @@ package University;
 public class UEmployee 
 {
 
-	private String name;
+	private String name; //name and salary for standard employee
 	private double salary;
 	
 	public UEmployee(String n, double s)
@@ -12,7 +12,7 @@ public class UEmployee
 		salary = s;
 	}
 
-	public String getName()
+	public String getName() //returns variables for objects
 	{
 		return(name);
 	}
