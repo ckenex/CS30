@@ -1,3 +1,5 @@
+/*
+
 1) a has-a relationship describes a class containing another class while
 an is-a relationship describes a class becoming an extension of an existing
 class
@@ -18,3 +20,6 @@ the testing class without calling on a method such as setRadius()
 6) An object is a class but a class is not always an object. A class will often
 describe an object however a class can also be the testing class which produces
 no object.
+
+
+*/
