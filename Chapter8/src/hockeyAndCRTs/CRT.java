@@ -4,22 +4,23 @@
 an is-a relationship describes a class becoming an extension of an existing
 class
 
-2) The word public, then the name of the class, then brackets containing parameters
-eg. public test(a, b)
-{
+2) go() and stop() will both be available
 
-}
+3) abstract methods will have nothing to start until acted upon from the derived class 
+and have no default while overriding a method changes an attribute that already exists
 
-3) public modifier means it can be accessed by other classes while the private
-modifier means it can only be accessed within the class
+4) an abstract class has more flexibility when it comes to non-final and non-static
+variables while an interface can only have static and final variables. An interface
+contains abstract methods but can not be inherited
 
-4) assuming the "2" given to the dot describes the radius of the dot, then the
-statement is invalid because you can not change the radius of the dot from
-the testing class without calling on a method such as setRadius()
-
-6) An object is a class but a class is not always an object. A class will often
-describe an object however a class can also be the testing class which produces
-no object.
-
+6) 
+	a) doThat() is a method that returns an int
+	b) an interface
+	c) because it is declared in Wo but needs to be implemented in a subclass
+	d) doThis(), doThat(), doNow(), Roo(int z)
+	e) Roo will override the method in Bo (returning 10 instead of 2)
+	f) calls on the superclass constructor to define Roo just like Bo
+	g) no, because it is overridden by the Roo class
+	h) yes, you can call the doThis() method in the superclass with the command super.doThis()
 
 */
