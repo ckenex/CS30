@@ -1,3 +1,15 @@
+/*
+
+Program: StatsPart2.java          Last Date of this Revision: April 4, 2022
+
+Author: Caden, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
+
 package projects;
 import java.io.*;
 import java.util.*;
@@ -122,6 +134,24 @@ Highest mark: 53.0
 Lowest mark: 11.0
 Average mark: 39.4
 
+How many students would you like to input?
+3
+Enter a student name: 
+katelyn
+Enter katelyn's test score: 
+78
+Enter a student name: 
+kaitlin
+Enter kaitlin's test score: 
+84
+Enter a student name: 
+caitlynn
+Enter caitlynn's test score: 
+71
+Success
+Highest mark: 84.0
+Lowest mark: 71.0
+Average mark: 77.66666666666667
 
 
 */
