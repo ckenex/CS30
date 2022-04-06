@@ -23,23 +23,23 @@ public class MyFile
 	{
 	
 		File myFile = new File("C:\\Users\\105128004\\Documents\\CS30 Eclipse\\Chapter11\\supplies.txt");
-		
-		try
+		//creates files
+		try //attempting to create files so long as conditions are met
 		{
 			myFile.createNewFile();
 			System.out.println("myFile has been created");
-		} catch (IOException e)
+		} catch (IOException e) //catching error and displaying error to user
 		{
 			System.out.println("file could not be created.");
 			System.err.println("IOException: " + e.getMessage());
 		}
 		
-		System.out.println("Would you like to keep or delete the file?");
+		System.out.println("Would you like to keep or delete the file?"); //prompting user for further choice
 		System.out.println("Press 1 to keep, or press 2 to delete.");
 		Scanner in = new Scanner(System.in);
 		int input = in.nextInt();
 		
-		if(input == 1)
+		if(input == 1) //logic to communicate keep/delete
 		{
 			System.out.println("File has been kept");
 		}

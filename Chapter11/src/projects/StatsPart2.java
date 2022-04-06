@@ -20,14 +20,14 @@ public class StatsPart2
 	public static void main(String[] args)
 	{
 		
-		File centFile = new File("C:\\StudentStats.txt");
+		File centFile = new File("C:\\StudentStats.txt"); //file created first as it isn't depending on userinput
 		FileWriter out;
 		BufferedWriter writeFile;
 		Scanner cIn = new Scanner(System.in);
 		double mark;
 		String name;
 		int sCount;
-		double lowest = 100;
+		double lowest = 100; //predefining all variables as they may change depending on for loop
 		double highest = 0;
 		double averageT = 0;
 		double average = 0;
@@ -43,13 +43,13 @@ public class StatsPart2
 			out = new FileWriter(centFile);
 			writeFile = new BufferedWriter(out);
 			
-			for (int i = 0; i < sCount; i++)
+			for (int i = 0; i < sCount; i++) // depending on amount of students
 			{
-				System.out.println("Enter a student name: ");
+				System.out.println("Enter a student name: "); //receiving multiple students/grades
 				name = sIn.next();
 				System.out.println("Enter " + name + "'s test score: ");
 				mark = sIn.nextDouble();
-				if(mark < lowest)
+				if(mark < lowest) //logic for finding max, min and avg
 				{
 					lowest = mark;
 				}
@@ -58,7 +58,7 @@ public class StatsPart2
 					highest = mark;
 				}
 				averageT = averageT + mark;
-				writeFile.write(name);
+				writeFile.write(name); //writing results to file
 				writeFile.newLine();
 				writeFile.write(String.valueOf(mark));
 				writeFile.newLine();
@@ -68,7 +68,7 @@ public class StatsPart2
 			writeFile.close();
 			out.close();
 			System.out.println("Success");
-			System.out.println("Highest mark: " + highest);
+			System.out.println("Highest mark: " + highest); //output min max avg
 			System.out.println("Lowest mark: " + lowest);
 			System.out.println("Average mark: " + average);
 		}

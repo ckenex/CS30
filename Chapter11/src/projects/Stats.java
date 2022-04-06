@@ -11,7 +11,7 @@ public class Stats
 		FileReader in;
 		BufferedReader readFile;
 		String stuname, mark;
-		double avgMark;
+		double avgMark; //predefining variables
 		double totalMarks = 0;
 		int markCount = 0;
 		
@@ -29,12 +29,12 @@ public class Stats
 			
 				totalMarks += Double.parseDouble(mark);
 			}
-			avgMark = totalMarks / markCount;
+			avgMark = totalMarks / markCount; //logic to find average
 			System.out.println("Average: " + avgMark);
 			readFile.close();
-			in.close();
+			in.close(); //close in order to conserve resources
 		} 
-		catch(FileNotFoundException e)
+		catch(FileNotFoundException e) //additional exception handling if there are problems locating file
 		{
 			System.out.println("File does not exist or could not be found");
 			System.err.println("FileNotFoundException: " + e.getMessage());
@@ -47,6 +47,6 @@ public class Stats
 		}
 		
 		
-	}
+	} //continued in stats part 2
 
 }
