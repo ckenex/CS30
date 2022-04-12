@@ -22,7 +22,7 @@ public class MyFile
 	public static void main(String[] args)
 	{
 	
-		File myFile = new File("C:\\Users\\105128004\\Documents\\CS30 Eclipse\\Chapter11\\supplies.txt");
+		File myFile = new File("C:\\supplies.txt");
 		//creates files
 		try //attempting to create files so long as conditions are met
 		{
