@@ -1,3 +1,17 @@
+/*
+
+Program: Search.java        Last Date of this Revision: April 22, 2022
+
+Purpose: object used to streamline finding a specific name within an array of names
+
+Author: Caden, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
+
 package findName;
 
 public class Search 

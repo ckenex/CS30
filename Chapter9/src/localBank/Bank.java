@@ -149,30 +149,32 @@ public class Bank
 	//Create a modifyAccount(String AcctID) method 
 	//if(acctIndex > 1) 
 	 	
-	 public void modifyAccount(String acctID)
+	 public void modifyAccount(String acctID, int sCode, String fn, String ln, String ns, String nc, String np, String npc)
 	 {
 		 
 		 int acctIndex;
 		 Account acct, acctToMatch;
 		 
 		 acctToMatch = new Account(acctID);
-		 acctIndex = accounts.indexOf(acctToMatch);	
-		 	
-		if(acctIndex > 1) 
-		{
-			acct = accounts.get(acctIndex);
-			acct.changeAddress(acctID, acctID, acctID, acctID, acctID, acctID);
-		}
-		
-		//print acct to the screen
+		 acctIndex = accounts.indexOf(acctToMatch);
 		 
-		 else
+		 if (acctIndex > -1) 
 		 {
-			 System.out.println("Account does not exist");
-		 }		
-	 }
+		 		acct = accounts.get(acctIndex);				//retrieve object to modify
+		 		if (sCode == 1) 
+		 		{
+		 			//acct.deposit(amt);
+		 			acct.changeAddress(fn, ln, ns, nc, np, npc);
+		 			accounts.set(acctIndex, acct);		//replace object with updated object
+		 			System.out.println(acct);
+		 		} 
+		 		else
+		 		{
+		 			System.out.println("Account does not exist");
+		 		}		
+		 }
 	
-
+	}
 
 	
 }

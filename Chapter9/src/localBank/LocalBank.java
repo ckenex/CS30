@@ -21,7 +21,7 @@ package localBank;
 		Scanner input = new Scanner(System.in);
 		String action, acctID;
 		Double amt;
-
+		String fn, ln, s, c, p, pc;
 		/* display menu of choices */
 		do {
 			System.out.println("\nDeposit\\Withdrawal\\Check balance");
@@ -50,11 +50,82 @@ package localBank;
 					easySave.checkBalance(acctID);
 				} else if (action.equalsIgnoreCase("R")) {
 					easySave.deleteAccount(acctID);
-				} else if (action.equalsIgnoreCase("M")) {
-					easySave.modifyAccount(acctID);
+				} else if (action.equalsIgnoreCase("M"))
+				{	
+					System.out.println("Enter firstname: ");
+					fn = input.next();
+					System.out.println("Enter lastname: ");
+					ln = input.next();
+					System.out.println("Enter new street: ");
+					s = input.next();
+					System.out.println("Enter new city: ");
+					c = input.next();
+					System.out.println("Enter new province: ");
+					p = input.next();
+					System.out.println("Enter new postal code: ");
+					pc = input.next();
+					easySave.modifyAccount(acctID, 1, fn, ln, s, c, p, pc);
 				}
 				//write code to modify information if action equals "M"
 			}
 		} while (!action.equalsIgnoreCase("Q"));
 	}
 }
+
+ /* Screen Dump
+ 
+ Deposit\Withdrawal\Check balance
+Add an account\Remove an account
+Quit
+
+Enter choice:  Add an account
+Enter account ID: 
+Deposit\Withdrawal\Check balance
+Add an account\Remove an account
+Quit
+
+Enter choice: Enter account ID: 132
+
+Deposit\Withdrawal\Check balance
+Add an account\Remove an account
+Quit
+
+Enter choice: D
+Enter account ID: 132
+Enter deposit amount: 10000
+Account does not exist.
+
+Deposit\Withdrawal\Check balance
+Add an account\Remove an account
+Quit
+
+Enter choice: M
+Enter account ID: 132
+Enter firstname: 
+c
+Enter lastname: 
+k
+Enter new street: 
+cresent
+Enter new city: 
+calgary
+Enter new province: 
+alberta
+Enter new postal code: 
+pppooo
+
+Deposit\Withdrawal\Check balance
+Add an account\Remove an account
+Quit
+
+Enter choice: Quit
+Enter account ID: 132
+
+Deposit\Withdrawal\Check balance
+Add an account\Remove an account
+Quit
+
+Enter choice:  Q
+
+ 
+ */

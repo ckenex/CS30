@@ -1,3 +1,16 @@
+/*
+
+Program: Squares.java        Last Date of this Revision: April 22, 2022
+
+Purpose: displaying first 5 square numbers
+
+Author: Caden, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
 package generalAssignments;
 
 public class Squares 
@@ -19,3 +32,15 @@ public class Squares
 	}
 
 }
+
+/* Screen Dump
+ 
+0
+1
+4
+9
+16
+
+ 
+ 
+ */

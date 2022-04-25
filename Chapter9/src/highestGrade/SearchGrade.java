@@ -1,3 +1,16 @@
+/*
+
+Program: SearchGrade.java        Last Date of this Revision: April 22, 2022
+
+Purpose: object search grade to streamline process of finding the highest number in a set
+
+Author: Caden, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
 package highestGrade;
 
 public class SearchGrade 

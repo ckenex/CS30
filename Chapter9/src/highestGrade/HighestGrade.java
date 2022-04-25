@@ -1,3 +1,16 @@
+/*
+
+Program: HighestGrade.java        Last Date of this Revision: April 22, 2022
+
+Purpose: finding highest grade/number within 5 different grades
+
+Author: Caden, 
+School: CHHS
+Course: Computer Programming 30
+ 
+
+*/
+
 package highestGrade;
 import java.util.*;
 
@@ -23,3 +36,20 @@ public class HighestGrade
 	}
 	
 }
+
+/* Screen Dump
+
+enter grade number 1:
+90
+enter grade number 2:
+23
+enter grade number 3:
+45
+enter grade number 4:
+74
+enter grade number 5:
+88
+The highest grade is: 90
+
+
+*/
