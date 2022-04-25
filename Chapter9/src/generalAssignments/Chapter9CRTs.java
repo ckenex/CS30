@@ -31,5 +31,4 @@ b) myNums.remove(1);
 
 8) outprints: a
 
-
 */
